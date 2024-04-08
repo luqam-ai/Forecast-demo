@@ -1,2 +1,4 @@
-# Forecast-demo
-This is demo version of deployment app using Streamlit Cloud.
+# streamlit_demo_app
+
+run app with command:
+streamlit run main.py

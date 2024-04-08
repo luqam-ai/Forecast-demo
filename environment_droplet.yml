@@ -1,0 +1,35 @@
+name: streamlit_env_3
+channels:
+  - plotly
+  - conda-forge
+  - defaults
+dependencies:
+  - ipykernel
+  - ipython
+  - ipywidgets
+  - jupyter_client
+  - jupyter_core
+  - markdown-it-py
+  - matplotlib
+  - numpy=1.24.3
+  - openssl
+  - pandas=1.5
+  - plotly
+  - python=3.8
+  - qt-main
+  - qt-webengine
+  - qtwebkit
+  - requests
+  - setuptools
+  - streamlit=1.24
+  - seaborn
+  - yaml
+  - pip:
+    - cmdstanpy==1.1.0
+    - convertdate==2.4.0
+    - ephem==4.1.4
+    - holidays==0.29
+    - lunarcalendar==0.0.9
+    - prophet==1.1.4
+    - pymeeus==0.5.12
+    - tqdm==4.65.0
