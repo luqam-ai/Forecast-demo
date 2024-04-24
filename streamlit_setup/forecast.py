@@ -100,16 +100,9 @@ def main():
         ax.scatter(all_data.ds, all_data['y'], color='r')
         fig = model.plot(forecast)
         st.pyplot(fig)
-        file = f"{prod}_mieszk-{mieszkania}_cpi-{cpi}_wskbm-{wsk_bm}_promo-{promo}"
-        print(f"Write to file {file}")
-        fig.savefig(f'{file}_model.png')
 
         fig_real_forecast = plot_forecast_vs_real(all_data, forecast, prod)
-        fig_real_forecast.write_json(f"{file}_real_forecast.json")
         st.plotly_chart(fig_real_forecast)
-
-
-
 
 if __name__ == "__main__":
     main()
