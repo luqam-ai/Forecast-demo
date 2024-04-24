@@ -9,3 +9,4 @@ imbalanced-learn==0.9.1
 joblib==1.1.1
 backcall==0.2.0
 plotly==5.21
+prophet==1.1.4

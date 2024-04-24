@@ -2,14 +2,7 @@ import pickle
 import streamlit as st
 import pandas as pd
 import analysis
-
-def main():
-        
-    # Page title
-    st.title('Pognozowanie sprzedaży')
-    st.image('images/prognozowanie-sprzedazy.png')
-    st.write("\n\n")
-
+import forecast
 
 # Sidebar navigation
 def sidebar_navigation():
@@ -21,7 +14,7 @@ def sidebar_navigation():
     if selected_page == "Analiza danych":
         analysis.main()
     elif selected_page == "Prognoza sprzedaży":
-        main()
+        forecast.main()
 
 # Run the app
 if __name__ == "__main__":
