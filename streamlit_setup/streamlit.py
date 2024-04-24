@@ -10,12 +10,6 @@ def main():
     st.image('images/prognozowanie-sprzedazy.png')
     st.write("\n\n")
 
-    st.markdown(
-        """
-        Ta aplikacja ma na celu...   
-        """
-    )
-
 
 # Sidebar navigation
 def sidebar_navigation():
