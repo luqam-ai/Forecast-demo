@@ -73,17 +73,17 @@ def plot_correlation_matrix(prod1):
         columns= {
             'CPI': 'Wskaźnik Inflacji',
             'Wsk_bud_mont': 'Wskaźnik cen bud-montaż.',
-            'Sale_quantity_final': 'Liczba sprzedanych sztuk [produktu]',
-            'Sum_q_lamels_by_month': 'Suma wszystkich sprzedanych lameli',
-            'Sum_q_other_lamels_by_month': 'Suma pozostałych lameli',
+            'Sale_quantity_final': 'Liczba sprzedanych sztuk PROD',
+            'Sum_q_lamels_by_month': 'Suma wszystkich sprzedanych PROD',
+            'Sum_q_other_lamels_by_month': 'Suma pozostałych PROD',
             'Promo_ind': 'Wskaźnik Promocji [produktu]',
-            'Promo_ind_all': 'Wskaźnik Promocji wszyskie lamele',
+            'Promo_ind_all': 'Wskaźnik Promocji wszyskie PROD',
             'Mieszkania' : 'Liczba mieszkań oddanych do uż.'
         })[['Wskaźnik Inflacji', 'Wskaźnik cen bud-montaż.', 'Liczba mieszkań oddanych do uż.', 
-                      'Wskaźnik Promocji [produktu]', 'Wskaźnik Promocji wszyskie lamele', 
-                      'Liczba sprzedanych sztuk [produktu]', 
-                      'Suma wszystkich sprzedanych lameli', 
-                      'Suma pozostałych lameli']].corr()
+                      'Wskaźnik Promocji [produktu]', 'Wskaźnik Promocji wszyskie PROD', 
+                      'Liczba sprzedanych sztuk PROD', 
+                      'Suma wszystkich sprzedanych PROD', 
+                      'Suma pozostałych PROD']].corr()
     # Mask to matrix
     mask = np.zeros_like(cormat, dtype=bool)
     mask[np.triu_indices_from(mask)] = True
